@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+  <header >
+    <div class="menu-navegacion">
+      <img src="./img/close.svg" alt="close" class="close hide">
+      <ul>
+        <a href="#" class="home-btn "><li>HOME</li></a>
+        <a href="#products" class="home-btn "><li>PRODUCTS</li></a>
+      </ul>
+    </div>
+    <!-- Cart -->
+    <div class="cart-navegacion spread">
+      <img src="./img/close.svg" alt="close" class="close hide">
+      <div class="cart-navegacion-container">
+        <h2>My Cart</h2>
+
+        <div  id="cart-navegacion-content">
+        </div>
+  
+      <div class="cart-navegacion-values">
+        <span class="cart-navegacion-values-items"><span>0</span> items</span>
+        <span class="cart-navegacion-values-total">$0.00</span>
+      </div>
+      <div >
+        <button disabled="disabled" id="checkout-btn"> <i class="bx bxs-check-shield"></i> Checkout</button>
+      </div>
+      </div>
+      
+  
+    </div>
+    <!-- /Cart -->
+    <nav class="home-menu ">
+      <div class="title-logo">
+        <img src="./img/favicon.png" alt="">
+        <a href="">STORE</a>
+      </div>
+      <div class="icon-menu">
+        <i class="icon-menu_item bx bx-moon theme-mode "> </i>
+        <i class="icon-menu_item bx bx-shopping-bag cart-item"><span class="cart-counter">0</span> </i>
+        <i class="icon-menu_item bx bx-grid-alt menu-button" id="menu-button"> </i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <div class="home-img-container">
+        <div class="portada">
+          <img src="./img/home.png" alt="">
+        </div>
+      </div>
+      <div class="home-content">
+        <span class="titulo"><h1>New Sweatshirt <br>  COLLECTIONS 2022</h1></span>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quod explicabo cum incidunt, fugit tempora corrupti debitis consequuntur!</p>
+        <span class="home-precio">$14.00</span>
+        <div class="home-product-btn">
+          <div class="btn-discover">Discover</div>
+          <div class="btn-to-cart">ADD TO CART</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="products_container">
+        <div class="filter">
+          <ul class="products-filters">
+            <li valor="All">
+              <h3 valor="All">Show All</h3>
+              <span valor="All">show all products</span>
+            </li>
+            <li valor="Hoodies">
+              <h3 valor="Hoodies">Hoodies</h3>
+              <span valor="Hoodies">3 products</span>
+            </li>
+            <li valor="Shirts">
+              <h3 valor="Shirts">Shirts</h3>
+              <span valor="Shirts">4 products</span>
+            </li>
+            <li valor='Sweatshirts'>
+              <h3 valor='Sweatshirts'>Sweatshirts</h3>
+              <span valor='Sweatshirts'>4 products</span>
+            </li>
+          </ul>
+        </div>
+        <div class="articulos"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Our information</h3>
+        <div class="footer-element">
+          <a href="#">Toluca - México</a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h3>About Us</h3>
+        <div class="footer-element">
+          <a href="#">Support Center</a>
+          <a href="#">Customer Support</a>
+          <a href="#">About Us</a>
+          <a href="#">Copy Right</a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h3>Product</h3>
+        <div class="footer-element">
+          <a href="#">Hoodies</a>
+          <a href="#">Shirts</a>
+          <a href="#">Sweatshirts</a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h3>Social</h3>
+        <div class="footer-element">
+        <ul class="social-items">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><li class="bx bxl-facebook"></li></a>
+          <a href="https://twitter.com/" target="_blank"><li class="bx bxl-twitter"></li></a>
+          <a href="https://www.instagram.com/" target="_blank"><li class="bx bxl-instagram"></li></a>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <span class="copyright">© ACADEMLO. All rigths reserved</span>
+  </footer>
+
+  <script src="./js/cart.js"></script>
+  <script src="./js/effects.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+</html>
